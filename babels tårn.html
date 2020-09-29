@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title> The tower of babel</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="grid_item">
+      <h1> The tower of babel </h1>
+      <br/>
+      <p id="italic"> The legend (bible, chapter 6-9 in the book of Genesis, ed.) says, that after the Great Flood (the one with Noah's ark, ed.),
+        when the Earths population was still gathered in one place and all spoke one language. The people started to build a tower
+        in Shinar (now believed to be Babylonia, ed.). They wanted to build a tower big enough to reach to the heavens, so they built
+        and built, day after day, until the tower got pretty tall and the people were very pleased with themselves.
+        God seeing this, got angry at the men for wanting to reach Him and be like Him. So, one day, he made the peole speak different tongues,
+        so that they couldn't understand each other, thus creating the languages that existed then. With no common language the people scattered
+        accross the earth and left the tower in ruins. </p>
+
+        <p>
+        The tale of the Tower of Babel has inspired countless of artists throughout time. Adding to the list of artists, this insignificant one
+        depicts the tale with only svg, canvas and jquery methods at her disposal.
+      </p>
+    </header>
+
+  <div class="grid_item" id="svg-container">
+    <h2>gods wrath, svg</h2>
+  <svg id="svg" width="250" height="215" viewBox="0 0 250 215" style="background: linear-gradient(180deg, #568EAD 0%, #FFCEDA 60%, #B6DEF4 60%, #576343 60%, #557127 60%, #BECE83 100%);">
+
+    <path id="elem1b" d="M 80 203 h140 l-10 -30 z" fill="#6A531D" stroke="black"/>
+    <path id="elem1a" d="M 5 203 h75 l130 -30 h-180 z" fill="#857449" stroke="black"/>
+    <path id="elem2" d="M 40 172 h 160 l -5 -25 h -145 z" fill="#7B6C49" stroke="black"/>
+    <path id="elem3" d="M 55 147 h135 l -3 -25 l -125 3 z" fill="#B39358" stroke="black"/>
+    <path id="elem4" d="M68 125 l 110 -3 l -5 -20 l -100 -3 Z" fill="#C4A773" stroke="black"/>
+    <path id="elem5b" d="M100 98 l 65 3 l -5 -30 l -50 2 Z" fill="#AA5D36"stroke="black" />
+    <path id="elem6b" d="M122 15 h27 l 5 55 l -40 2  z" fill="#B6875B" stroke="black"/>
+    <path id="elem5a" d="M 75 98 h25 l 2 -17 l -23 -2  z" fill="#C1A16E" stroke="black"/>
+    <path id="elem6a" d="M105 80 l -1 -25 l -23 3 v 20  z" fill="#BFA16F" stroke="black"/>
+    <path id="elem7a" d="M82 56  l 20 -2 l -2 -25 l -15 1 z" fill="#CEAB70" stroke="black"/>
+    <path id="lightning" d="M 160 -20 L 200 -20 L 180 50 L 200 46 L 140 170 L 160 55 150 57 Z" fill="yellow" stroke="black"/>
+
+</svg>
+
+<p>Click the button to make God angry</p>
+
+  <button id="fall"> Make God angry </button>
+  </div>
+
+  <div class="grid_item" id="canvas-container">
+    <h2>Gods wrath, canvas</h2>
+
+  <canvas id="canvas" width="250" height="215" style="background: linear-gradient(180deg, #568EAD 0%, #FFCEDA 60%, #B6DEF4 60%, #576343 60%, #557127 60%, #BECE83 100%)">   </canvas>
+
+  <p>Click the button to make God angry in pixelated form</p>
+
+  <button type="button" id="animate"> Make God angry </button>
+  </div>
+
+  <div class="grid_item" id="text-container">
+    <h2 id="dokumentasjon"> hide documentation</h2>
+    <div id="dokumentasjon-innhold">
+        <h3> CSS-grid</h3>
+        <p> The body element was chosen to be the grid container
+        because it seemed like the most sensible choice. The grid lines
+      were set to 50px between columns and 5px between rows, because
+    more space between columns were needed to create a clearer distinction
+    between the main html-elements, header, both drawings and the documentation.
+  This creates a cleaner, tidier page design. I wanted to center the main elemnts
+both beacause, in my opinion, it creates a minimalistic look for the page but also
+to beacause it makes a responsive design in regards to computers with different
+creen sizes. Because of this I decided to make three columns, the ones to the sides
+got 230px in width and giving the center column automatic sizing. The rows were made
+automatic, meaning they will be the size of the elemnts inside them. Finally I decided
+a grid template, naming the parts of the grid I was going to put elements in.
+This because I knew how I wanted the page to look like, and it made it very easy to
+place my elemnts on the grid.   </p>
+
+        <h3>HTML canvas and SVG</h3>
+        <p> I used the same method to create the drawings in SVG and HTML canvas. First I made
+        js-objects of the differents shapes I wanted to use, to then creates functions for the animated
+      parts. </p>
+        <h3>jQuery</h3>
+        <p>jQuery is used for the clickable objects, to make the buttons activate and toggle
+        between functions and to show/hide the documentation. </p>
+        <h3>Cross-browser testing</h3>
+        <p>The html page has been tested in both Google Chrome and Firefox, and it works as
+        intended on both sites.</p>
+        <h3>Sources of information</h3>
+        <p> The most important sources are: <br>https://stackoverflow.com/questions/11789665/jquery-animate-svg-element ,
+        used for the animation function <br> https://www.youtube.com/watch?v=yq2au9EfeRQ , to create round, moving objects
+        <br> https://css-tricks.com/snippets/css/complete-guide-grid/, to learn more about the CSS grid.  </p>
+
+  </div>
+
+  </div>
+
+  <script src="canvas.js">   </script>
+  <script src="svg.js">   </script>
+  <script src="jquery.js">   </script>
+
+  </body>
+
+</html>
